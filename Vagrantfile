@@ -77,7 +77,7 @@ Vagrant.configure("2") do |config|
 	      mkdir -p ~root/.ssh
               cp ~vagrant/.ssh/auth* ~root/.ssh
 	      yum install -y mdadm smartmontools hdparm gdisk
-		echo y | mdadm --create --verbose /dev/md0 -l 1 -n 4 /dev/sd{b,c,d,e}
+		echo y | mdadm --create --verbose /dev/md0 -l 5 -n 5 /dev/sd{b,c,d,e,f}
 		mdadm --detail --scan --verbose
 		echo "DEVICE partitions" > /etc/mdadm.conf
 		mdadm --detail --scan --verbose | awk '/ARRAY/ {print}' >> /etc/mdadm.conf
