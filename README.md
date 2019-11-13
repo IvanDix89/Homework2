@@ -1,6 +1,14 @@
 # Homework2
 1. Vagrant при загрузке создает автоматически RAID1 и выводит информацию.
 
+			    otuslinux: Personalities : [raid1] 
+			    otuslinux: md0 : active raid1 sde[3] sdd[2] sdc[1] sdb[0]
+			    otuslinux:       254976 blocks super 1.2 [4/4] [UUUU]
+			    otuslinux:       [>....................]  resync =  1.4% (3584/254976) finish=1.1min speed=3584K/sec
+			    otuslinux:       
+			    otuslinux: unused devices: <none>
+
+
 2. Работа с RAID
   			
 			1. Фейлим один диск 
